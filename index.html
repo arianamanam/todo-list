@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -9,7 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>TO-DO LIST</title>
   </head>
   <body>
     <header class="todo-header">
@@ -23,20 +24,25 @@
         <span class="typing-ball"></span>
       </div>
 
-      <section class="add-todo">
+      <div class="add-todo">
         <input type="text" id="add-input" placeholder="Add your todo..." />
-        <button class="add-btn" style="vertical-align:middle"><span>Add</span></button>
-      </section>
+        <button type="submit" class="add-btn" style="vertical-align:middle">Add</button>
+      </div>
 
-      <section>
+      <div>
+        <p><span id="datetime"></span></p>
+        <script src=""></script>
+      </div>
+
+      <div id="myUnOrdList">
         <ul class="list-todo">
-          <li class="item-todo">item one</li>
+          <!-- <li class="item-todo">item one</li>
           <li class="item-todo">item two</li>
           <li class="item-todo">item three</li>
           <li class="item-todo">item four</li>
-          <li class="item-todo">item five</li>
+          <li class="item-todo">item five</li> -->
         </ul>
-      </section>
+      </div>
     </main>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
