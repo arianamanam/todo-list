@@ -1,16 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app">
+    <header class="todo-header">
+      <button class="theme-btn">
+        <i class="fa-solid fa-moon theme-icon"></i>
+      </button>
+    </header>
+    <main class="todo-main">
+      <div class="typed-box">
+        <h1 class="typed"></h1>
+        <span class="typing-ball"></span>
+      </div>
 
-    </div>
-    <script type="module" src="/main.js"></script>
+      <section class="add-todo">
+        <input type="text" id="add-input" placeholder="Add your todo..." />
+        <button class="add-btn" style="vertical-align:middle"><span>Add</span></button>
+      </section>
+
+      <section>
+        <ul class="list-todo">
+          <li class="item-todo">item one</li>
+          <li class="item-todo">item two</li>
+          <li class="item-todo">item three</li>
+          <li class="item-todo">item four</li>
+          <li class="item-todo">item five</li>
+        </ul>
+      </section>
+    </main>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script type="module" src="/main.js"></script>
 </html>
