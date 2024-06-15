@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  /* box-sizing: border-box; */
+}
+
+body{
+  /* align-items: center; */
+  height: 100vh;
+  /* display: flex; */
+
+}
+
+/* * start styles header */
+.todo-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 15px;
+}
+
+.theme-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  /* background: #e0e0e0; */
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  cursor: pointer;
+}
+
+.theme-icon{
+  color:#5D3FD3 ;
+  font-size: 1.2rem;
+}
+/* * end styles header */
+
+/* * start styles main */
+
+.todo-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+justify-content: center;
+height: 100%;
+}
+
+.typed-box{
+  display: inline-flex;
+  align-items: center;
+  font-size: 60px;
+  height: 60px;
+  /* display: inline-block; */
+}
+
+.typing-ball {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #5D3FD3;
+  border-radius: 50%;
+  margin-left: 5px;
+  /* position: absolute; */
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+}
+
+.typed {
+  display: inline;
+  border-right: none;
+  background: -webkit-linear-gradient(#5D3FD3, #ceafb5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+ .typed-cursor {
+  opacity: 0;
+ }
+
+.add-todo{
+  margin-top: 100px;
+}
+
+#add-input{
+  height: 50px;
+  width: 500px;
+  padding: 2px 30px;
+  border: none;
+  border-radius: 10px;
+/* background:#dde1e7; */
+color: #595959;
+border-radius: 25px;
+box-shadow: inset 2px 2px 5px#babecc, inset -5px -5px 10px #ffffff73
+}
+
+input::placeholder {
+  color: rgb(134, 122, 122);
+  font-style: italic;
+}
+
+#add-input:focus{
+  outline: none;
+}
+
+/* * end styles main */
+
+
+.add-btn{
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  border: none;
+  border-radius: 50%;
+  /* background: #e0e0e0; */
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  cursor: pointer;
+}
+
+
